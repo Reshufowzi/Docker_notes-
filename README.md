@@ -59,3 +59,22 @@ EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 ```
+```
+Quick Start: 3 Essential Steps 
+To push an image successfully, follow these standard steps:
+Log in to the Registry
+Before pushing, you must authenticate. Run the following command and enter your credentials:
+bash
+docker login
+Note: If using a private registry, specify the URL: docker login <registry-url>.
+Tag Your Image
+Docker images must be tagged with the destination repository name. The format is typically [REGISTRY_HOST/]username/repository:tag.
+bash
+docker tag local-image-name:latest your-username/remote-repo-name:v1.0
+If you don't provide a tag, Docker defaults to latest.
+Push the Image
+Upload the tagged image to the remote repository:
+bash
+docker push your-username/remote-repo-name:v1.0
+```
+
