@@ -77,4 +77,8 @@ Upload the tagged image to the remote repository:
 bash
 docker push your-username/remote-repo-name:v1.0
 ```
+```
+<img width="883" height="440" alt="image" src="https://github.com/user-attachments/assets/35571361-209a-4155-b3f4-177dda0f2b92" />
+```
+
 
