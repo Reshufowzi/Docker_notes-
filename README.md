@@ -90,7 +90,11 @@ docker run -itd --name container2 -p 8081:80 -v /home/ubuntu/bindmounts:/app/dat
 ```
 docker exec -it container2 /bin/bash
 ```
+```
+apt update
+apt install iputils-ping -y
 
+```
 
 
 
