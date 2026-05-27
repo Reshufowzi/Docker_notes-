@@ -78,5 +78,19 @@ bash
 docker push your-username/remote-repo-name:v1.0
 ```
 
+### Docker Volumes 
+```
+ docker run -itd --name contain1 -p 8080:80 -v myvolume:/app/data httpd:latest
+```
+### Bindmounts 
+```
+docker run -itd --name container2 -p 8081:80 -v /home/ubuntu/bindmounts:/app/data nginx:latest
+
+```
+```
+docker exec -it container2 /bin/bash
+```
+
+
 
 
